@@ -1,3 +1,7 @@
 PyYAML==3.11
+boto==2.34.0
 distribute==0.6.24
+ecdsa==0.11
+paramiko==1.15.1
+pycrypto==2.6.1
 troposphere==0.6.2
