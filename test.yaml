@@ -1,0 +1,20 @@
+subnet: subnet-fcbd5aa5
+security_groups:
+  - sg-809ae5e5
+private_key: /home/mmior/.ssh/id_rsa
+ssh_user: ubuntu
+cluster:
+  - tag: cassandra
+    ami: ami-64b7600c
+    type: m3.large
+    count: 3
+  - tag: nginx
+    ami: ami-64b7600c
+    type: m3.xlarge
+  - tag: client
+    ami: ami-64b7600c
+    type: m3.medium
+runs:
+  - SCHEMA_TYPE: RELATIONAL
+  - SCHEMA_TYPE: HALF
+  - SCHEMA_TYPE: UNCONSTRAINED
